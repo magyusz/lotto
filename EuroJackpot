@@ -1,0 +1,19 @@
+# EuroJackpot.
+import random
+randomlistA = []
+randomlistB = []
+szam = None
+while len(randomlistA) < 5:
+    szam = random.randint(1,50)
+    if szam not in randomlistA:
+        randomlistA.append(szam)
+    elif szam in randomlistA:
+        continue
+
+while len(randomlistB) < 2:
+    szam = random.randint(1,12)
+    if szam not in randomlistB:
+        randomlistB.append(szam)
+    elif szam in randomlistB:
+        continue
+print(sorted(randomlistA) , sorted(randomlistB))
