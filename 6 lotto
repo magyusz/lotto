@@ -1,0 +1,10 @@
+import random
+randomlist = []
+szam = None
+while len(randomlist) < 6:
+    szam = random.randint(1,45)
+    if szam not in randomlist:
+        randomlist.append(szam)
+    elif szam in randomlist:
+        continue
+print(sorted(randomlist)) 
